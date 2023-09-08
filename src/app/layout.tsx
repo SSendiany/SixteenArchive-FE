@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Metrophobic, Dela_Gothic_One } from 'next/font/google'
+import { Metrophobic } from 'next/font/google'
 
 const metrophobic = Metrophobic({ weight: ['400'], subsets: ['latin'] })
 
