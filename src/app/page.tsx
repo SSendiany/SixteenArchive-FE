@@ -41,7 +41,7 @@ export default function Home() {
             />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <h1
-                className={`${MetropolisBlack.className} text-6xl text-primaryOrange mb-10`}
+                className={`${MetropolisBlack.className} text-6xl text-primaryOrange mb-5`}
               >
                 ABOUT US
               </h1>
