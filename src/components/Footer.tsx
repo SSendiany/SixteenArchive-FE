@@ -3,6 +3,7 @@ import { Dela_Gothic_One } from "next/font/google";
 const dela_Gothic_One = Dela_Gothic_One({
   weight: ["400"],
   variable: "--font-dela",
+  display: "block",
   subsets: ["latin"],
 });
 
