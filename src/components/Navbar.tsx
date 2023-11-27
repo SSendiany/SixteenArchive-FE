@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${colorChange && 'border-b-2 border-primaryOrange'}`}>
         <a href="https://flowbite.com/" className="flex items-center">
           <Image
-            className="w-[150px]"
+            className="w-[100px]"
             src={"/images/logo.png"}
             alt=""
             width={0}

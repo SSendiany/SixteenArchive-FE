@@ -1,9 +1,8 @@
-import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-const MetropolisBlack = localFont({src: './fonts/Metropolis-Black.otf'})
+
 
 
 export default function Home() {
@@ -13,17 +12,17 @@ export default function Home() {
       <main className="flex min-h-screen flex-col bg-[#0F0F0F]">
         <section className="relative header-background" id="header" >
           <div className="max-w-screen-xl items-center justify-between mx-auto p-4">
-            <div className="absolute top-1/2 -translate-y-1/2 ">
-              <div className="text-2xl mb-3">Generate Our Vision</div>
+            <div className="absolute mt-5 top-1/2 -translate-y-1/2 ">
+              <div className={`text-2xl mb-3`} style={{fontWeight: 500}}>Generate Your Vision</div>
               <p
-                className={`${MetropolisBlack.className} -m-1 text-7xl text-primaryOrange`}
+                className={`-m-1 text-7xl text-primaryOrange`} style={{fontWeight: 700}}
               >ALL OUTSTANDING <br />STORYTELLING STARTS<br />WITH GREAT CONTENT
               </p>
-              <div className="mt-6 text-lg">
+              <div className={`mt-6 text-2xl `}  style={{fontWeight: 500}}>
                 We help brands to effectively kept being engaged in digital
                 landscape.
               </div>
-              <div className="bottom-0">
+              <div className={`bottom-0 opacity-70`} style={{fontWeight: 200}}>
                 <span>sixteenarchive.id@gmail.com</span>
                 <span></span>
               </div>
@@ -41,7 +40,7 @@ export default function Home() {
             />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <h1
-                className={`${MetropolisBlack.className} text-6xl text-primaryOrange mb-5`}
+                className={` text-6xl text-primaryOrange mb-5 font-[700]`}
               >
                 ABOUT US
               </h1>
@@ -57,11 +56,11 @@ export default function Home() {
           </div>
         </section>
         <section id="service">
-          <div className="max-w-screen-xl items-center justify-between mx-auto px-4 border-b-2 border-primaryOrange mb-10">
+          <div className="max-w-screen-xl hidden items-center justify-between mx-auto px-4 border-b-2 border-primaryOrange mb-10">
             Service
             <ul className="list-disc two-column-list">
               <li>
-                <h1 className={`${MetropolisBlack.className}`}>
+                <h1 className={``}>
                   WEBSITE DEVELOPMENT
                 </h1>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -72,17 +71,17 @@ export default function Home() {
                 electronic typesetting, remaining essentially unchanged.
               </li>
               <li>
-                <h1 className={`${MetropolisBlack.className}`}>
+                <h1 className={``}>
                   BRAND IDENTITY DESIGN
                 </h1>
               </li>
               <li>
-                <h1 className={`${MetropolisBlack.className}`}>
+                <h1 className={``}>
                   CRYPTO DEVELOPMENT
                 </h1>
               </li>
               <li>
-                <h1 className={`${MetropolisBlack.className}`}>
+                <h1 className={``}>
                   DIGITAL MEDIA DESIGN
                 </h1>
               </li>

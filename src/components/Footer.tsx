@@ -1,14 +1,13 @@
-import localFont from "next/font/local";
-const MetropolisBlack = localFont({ src: '../app/fonts/Metropolis-Black.otf' })
+
 
 export default function Footer() {
   return (
-    <footer className={`${MetropolisBlack.className} bg-black`} id="footer">
+    <footer className={`bg-black`} id="footer">
       <div className="mx-auto w-full max-w-screen-xl p-4">
         <div className="md:flex md:items-center md:justify-between">
           <div className="grid grid-cols-2 ">
             <div>
-              <h2 className={` mb-6 text-sm text-white uppercase`}>About</h2>
+              <h2 className={` mb-6 text-sm text-white uppercase font-[700]`}>About</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
@@ -23,7 +22,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className={`mb-6 text-sm text-white uppercase`}>Service</h2>
+              <h2 className={`mb-6 text-sm text-white uppercase font-[700]`}>Service</h2>
               <div className="md:flex md:justify-between"></div>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
@@ -50,12 +49,15 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-right">
-            <h2>
+            <h2 className="mb-5">
               Starting a new project or want to
               <br /> collaborate with us?
             </h2>
-            Click here
-            <button className="">New Project</button>
+            <button className="ml-5 btn bg-primaryOrange text-white rounded-3xl text-xl uppercase px-5 py-2 hover:opacity-80 font-[700]">New Project</button>
+            <div className="mt-5">
+              <span className="text-primaryOrange mr-5">sixteenarchive.id@gmail.com</span>
+              0812-4646-0825
+            </div>
           </div>
         </div>
       </div>

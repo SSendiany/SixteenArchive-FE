@@ -1,8 +1,31 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Metrophobic } from 'next/font/google'
+import localFont from "next/font/local";
+const MetropolisBlack = localFont({
+  src: [
+    {
+      path: './fonts/Metropolis-ExtraLight.otf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Metropolis-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Metropolis-Medium.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Metropolis-Black.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+})
 
-const metrophobic = Metrophobic({ weight: ['400'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sixteen Archive',
@@ -16,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={metrophobic.className}>{children}</body>
+      <body className={MetropolisBlack.className}>{children}</body>
     </html>
   )
 }
