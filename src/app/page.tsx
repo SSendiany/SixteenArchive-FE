@@ -24,7 +24,7 @@ export default function Home() {
                 landscape.
               </div>
               <div className="bottom-0">
-                <span>creativeinsight.id@gmail.com</span>
+                <span>sixteenarchive.id@gmail.com</span>
                 <span></span>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
               >
                 ABOUT US
               </h1>
-              We are Creative Insight, was founded with the vision of
+              We are Sixteen Archive, was founded with the vision of
               revolutionizing the way businesses and brands communicate and
               connect with their audiences. We are a dynamic and innovative team
               of creative minds, passionate about bringing ideas to life and

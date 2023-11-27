@@ -5,7 +5,7 @@ import { Metrophobic } from 'next/font/google'
 const metrophobic = Metrophobic({ weight: ['400'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Creative Insight',
+  title: 'Sixteen Archive',
   description: '',
 }
 
