@@ -51,7 +51,7 @@ export default function Home() {
               <div className="text-primaryOrange text-3xl tracking-[.30em]">
                 IN THE MAKING
               </div>
-              <div className="grid grid-cols-3 mt-32 px-24">
+              <div className="grid grid-cols-3 mt-20 px-24">
                 <div className="border-r-2 border-primaryOrange">
                   <h1 className={`text-4xl text-white font-[700]`}>200+</h1>
                   <span className="uppercase">Project</span>
@@ -128,6 +128,21 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        <section id="our-client">
+          <div className="max-w-screen-xl items-center justify-between mx-auto text-center py-24 relative border-y-2 border-primaryOrange ">
+            {/* <Image
+              src="/images/bg-about.png"
+              className={"w-full"}
+              alt="bg-about"
+              width={0}
+              height={0}
+            /> */}
+
+              <h1 className={`text-6xl text-primaryOrange mb-5 font-[700]`}>
+                OUR CLIENT
+              </h1>Lorem
+            </div>
+        </section>
         <section id="about-us">
           <div className="max-w-screen-xl items-center justify-between mx-auto py-24 relative border-y-2 border-primaryOrange ">
             <Image
@@ -138,7 +153,7 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-              <h1 className={` text-6xl text-primaryOrange mb-5 font-[700]`}>
+              <h1 className={` text-6xl text-white mb-5 font-[700]`}>
                 ABOUT US
               </h1>
               We are Sixteen Archive, was founded with the vision of
