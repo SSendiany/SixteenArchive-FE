@@ -33,7 +33,7 @@ body {
 
 .header-background {
   background-image:
-  linear-gradient(90deg, rgba(15,15,15,1) 22%, rgba(15,15,15,0.2) 100%),
+  linear-gradient(90deg, rgba(15,15,15,1) 30%, rgba(15,15,15,0.2) 100%),
   url('../../public/images/background1.png');
   @apply w-full h-screen;
   background-size: cover;
@@ -48,4 +48,9 @@ body {
 
 #footer a {
   @apply text-primaryOrange;
+}
+
+
+#service li::marker {
+  @apply text-primaryOrange text-6xl;
 }
