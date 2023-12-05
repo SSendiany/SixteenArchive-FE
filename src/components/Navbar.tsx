@@ -16,7 +16,7 @@ export default function Navbar() {
       window.addEventListener('scroll', changeNavbarColor);
     }
   return (
-    <nav className={`${colorChange ? 'bg-primaryBlack' : 'bg-transparent'} fixed w-full border-gray-200 z-50 `}>
+    <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'bg-transparent'} fixed w-full border-gray-200 z-50 `}>
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${colorChange && 'border-b-2 border-primaryOrange'}`}>
         <a href="https://flowbite.com/" className="flex items-center">
           <Image
