@@ -2,10 +2,18 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <>
+
+      <Script
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+        type="text/javascript"
+      ></Script>
       <Navbar />
       <main className="flex min-h-screen flex-col bg-[#0F0F0F]">
         <section className="relative header-background" id="header">
@@ -128,7 +136,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section id="our-client">
+        <section className="hidden" id="our-client">
           <div className="max-w-screen-xl items-center justify-between mx-auto text-center py-24 relative border-y-2 border-primaryOrange ">
             {/* <Image
               src="/images/bg-about.png"
@@ -141,6 +149,28 @@ export default function Home() {
               <h1 className={`text-6xl text-primaryOrange mb-5 font-[700]`}>
                 OUR CLIENT
               </h1>Lorem
+            </div>
+        </section>
+        <section id="our-team">
+          <div className="max-w-screen-xl items-center justify-between mx-auto text-center py-24 relative border-y-2 border-primaryOrange ">
+            {/* <Image
+              src="/images/bg-about.png"
+              className={"w-full"}
+              alt="bg-about"
+              width={0}
+              height={0}
+            /> */}
+
+              <h1 className={`text-6xl text-white mb-5 font-[700]`}>
+                MEET OUR TEAM
+            </h1>
+              <div className="flex mt-20">
+                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="laskarchristo" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/laskarchristo?trk=profile-badge"></a></div>
+                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="erlangga-fauzan-rezagani-7a3369180" data-version="v1">
+                <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/erlangga-fauzan-rezagani-7a3369180?trk=profile-badge"></a></div>
+                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ssendiany" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/ssendiany?trk=profile-badge"></a></div>
+                <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="dimdarmawan" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dimdarmawan?trk=profile-badge"></a></div>
+              </div>
             </div>
         </section>
         <section id="about-us">
