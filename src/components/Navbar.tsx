@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'bg-transparent'} fixed w-full border-gray-200 z-50 `}>
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${colorChange && 'border-b-2 border-primaryOrange'}`}>
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="/" className="flex items-center">
           <Image
             className="w-[100px]"
             src={"/images/logo.png"}
