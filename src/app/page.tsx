@@ -21,7 +21,7 @@ export default function Home() {
             <div className="md:absolute md:mt-5 md:top-1/2 mt-32 md:-translate-y-1/2">
               <div className={`md:text-2xl md:text-left text-center md:mb-3 mb-[11vh]`} style={{ fontWeight: 500 }}>
                 <span>Generate Your Vision
-                <hr className="w-[30vw] mx-auto mt-[3vh]"/>
+                <hr className="w-[30vw] mx-auto mt-[3vh] md:hidden"/>
                 </span>
               </div>
               <p
@@ -49,32 +49,32 @@ export default function Home() {
               </div>
           </div>
         </section>
-        <section className="hidden" id="project">
+        <section id="project">
           <div className="max-w-screen-xl items-center justify-between mx-auto relative border-y-2 border-primaryOrange ">
             <Image
               src="/images/background2.png"
-              className={"w-full"}
+              className={"w-full md:h-auto h-screen md:object-none object-cover"}
               alt="bg-about"
               width={0}
               height={0}
             />
             <div className="absolute top-1/2 w-full -translate-y-1/2 text-center">
-              <h1 className={` text-6xl text-white font-[700]`}>
+              <h1 className={`text-6xl text-white font-[700]`}>
                 SIXTEEN ARCHIVE
               </h1>
               <div className="text-primaryOrange text-3xl tracking-[.30em]">
                 IN THE MAKING
               </div>
               <div className="grid md:grid-cols-3 mt-20 px-24">
-                <div className="border-r-2 border-primaryOrange">
+                <div className="md:border-r-2 border-b-2 md:pb-0 pb-5 border-primaryOrange">
                   <h1 className={`text-4xl text-white font-[700]`}>200+</h1>
                   <span className="uppercase">Project</span>
                 </div>
-                <div className="border-r-2 border-primaryOrange">
+                <div className="md:border-r-2 border-b-2 md:py-0 py-5 border-primaryOrange">
                   <h1 className={` text-4xl text-white font-[700]`}>80+</h1>
                   <span className="uppercase">Clients</span>
                 </div>
-                <div>
+                <div className="md:pt-0 pt-5">
                   <h1 className={` text-4xl text-white font-[700]`}>2+</h1>
                   <span className="uppercase">Years</span>
                 </div>
@@ -85,9 +85,9 @@ export default function Home() {
         <section id="service">
           <div className="max-w-screen-xl items-center justify-between mx-auto px-4 py-14">
             Service
-            <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10">
+            <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10 text-white">
               <li>
-                <h1 className={`text-4xl text-white font-[700]`}>
+                <h1 className={`text-4xl font-[700]`}>
                   WEBSITE DEVELOPMENT
                 </h1>
                 <div className="mt-5">
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="md:text-left text-right">
-                <h1 className={`text-4xl text-white font-[700]`}>
+                <h1 className={`text-4xl font-[700]`}>
                   DIGITAL MEDIA DESIGN
                 </h1>
                 <div className="mt-5">
@@ -111,7 +111,7 @@ export default function Home() {
                 </div>
               </li>
               <li>
-                <h1 className={`text-4xl text-white font-[700]`}>
+                <h1 className={`text-4xl font-[700]`}>
                   VIDEO & PHOTO PRODUCTION
                 </h1>
                 <div className="mt-5">
@@ -126,7 +126,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="md:text-left text-right">
-                <h1 className={`text-4xl text-white font-[700]`}>
+                <h1 className={`text-4xl font-[700]`}>
                   CRYPTO DEVELOPMENT
                 </h1>
                 <div className="mt-5">
@@ -192,7 +192,7 @@ export default function Home() {
               <h1 className={`md:text-6xl text-4xl text-white mb-5 font-[700]`}>
                 ABOUT US
               </h1>
-              <p className="md:text-md text-sm md:mx-0 mx-10 text-justify">
+              <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
               We are Sixteen Archive, was founded with the vision of
               revolutionizing the way businesses and brands communicate and
               connect with their audiences. We are a dynamic and innovative team
