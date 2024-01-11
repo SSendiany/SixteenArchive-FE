@@ -16,11 +16,11 @@ export default function Navbar() {
       window.addEventListener('scroll', changeNavbarColor);
     }
   return (
-    <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'bg-transparent'} fixed w-full border-gray-200 z-50 `}>
+    <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'md:bg-transparent bg-primaryOrange'} fixed w-full border-gray-200 z-50 `}>
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${colorChange && 'border-b-2 border-primaryOrange'}`}>
         <a href="/" className="flex items-center">
           <Image
-            className="w-[100px]"
+            className="md:w-[100px] w-[17vw]"
             src={"/images/logo.png"}
             alt=""
             width={0}

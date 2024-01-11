@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "xs": { max: '389px' }
+      },
       colors: {
         'primaryBlack': "#0F0F0F",
         'primaryOrange': "#DA581C"
@@ -16,6 +19,10 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'home1':
+          "linear-gradient(90deg, rgba(15,15,15,1) 30%, rgba(15,15,15,0.2) 100%), url('../../public/images/background1.png')",
+        'home2':
+          "linear-gradient(180deg, rgba(15,15,15,1) 30%, rgba(15,15,15,0.2) 100%), url('../../public/images/bg2.png')"
       },
     },
   },
