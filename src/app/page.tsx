@@ -66,11 +66,11 @@ export default function Home() {
                 IN THE MAKING
               </div>
               <div className="grid md:grid-cols-3 mt-20 px-24">
-                <div className="md:border-r-2 border-b-2 md:pb-0 pb-5 border-primaryOrange">
+                <div className="md:border-r-2 md:border-b-0 border-b-2 md:pb-0 pb-5 border-primaryOrange">
                   <h1 className={`text-4xl text-white font-[700]`}>200+</h1>
                   <span className="uppercase">Project</span>
                 </div>
-                <div className="md:border-r-2 border-b-2 md:py-0 py-5 border-primaryOrange">
+                <div className="md:border-r-2 md:border-b-0 border-b-2 md:py-0 py-5 border-primaryOrange">
                   <h1 className={` text-4xl text-white font-[700]`}>80+</h1>
                   <span className="uppercase">Clients</span>
                 </div>
