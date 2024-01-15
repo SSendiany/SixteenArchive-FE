@@ -15,7 +15,7 @@ export default function Home() {
         type="text/javascript"
       ></Script>
       <Navbar />
-      <main className="flex min-h-screen flex-col bg-[#0F0F0F] text-white">
+      <main className="flex min-h-screen flex-col bg-[#0F0F0F]">
         <section className="relative header-background" id="header">
           <div className="max-w-screen-xl h-screen items-center md:justify-between mx-auto p-4">
             <div className="md:absolute md:mt-5 md:top-1/2 mt-32 md:-translate-y-1/2">
@@ -89,7 +89,7 @@ export default function Home() {
             Service
             <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10">
               <li>
-                <h1 className={`text-4xl font-[700]`}>
+                <h1 className={`text-4xl font-[700] text-white`}>
                   WEBSITE DEVELOPMENT
                 </h1>
                 <div className="mt-5">
@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="md:text-left text-right">
-                <h1 className={`text-4xl font-[700]`}>
+                <h1 className={`text-4xl font-[700] text-white`}>
                   DIGITAL MEDIA DESIGN
                 </h1>
                 <div className="mt-5">
@@ -113,7 +113,7 @@ export default function Home() {
                 </div>
               </li>
               <li>
-                <h1 className={`text-4xl font-[700]`}>
+                <h1 className={`text-4xl font-[700] text-white`}>
                   VIDEO & PHOTO PRODUCTION
                 </h1>
                 <div className="mt-5">
@@ -128,7 +128,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="md:text-left text-right">
-                <h1 className={`text-4xl font-[700]`}>
+                <h1 className={`text-4xl font-[700] text-white`}>
                   CRYPTO DEVELOPMENT
                 </h1>
                 <div className="mt-5">
@@ -194,7 +194,7 @@ export default function Home() {
               <h1 className={`md:text-6xl text-4xl mb-5 font-[700]`}>
                 ABOUT US
               </h1>
-              <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify">
+              <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
               We are Sixteen Archive, was founded with the vision of
               revolutionizing the way businesses and brands communicate and
               connect with their audiences. We are a dynamic and innovative team

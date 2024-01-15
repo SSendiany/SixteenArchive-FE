@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-right">
-            <h2 className="mb-5">
+            <h2 className="mb-5 text-white">
               Starting a new project or want to
               <br /> collaborate with us?
             </h2>
