@@ -59,23 +59,25 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 w-full -translate-y-1/2 text-center">
-              <h1 className={`text-6xl text-white font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl font-[700]`}>
                 SIXTEEN ARCHIVE
               </h1>
-              <div className="text-primaryOrange text-3xl tracking-[.30em]">
+              <div className="text-primaryOrange md:text-3xl text-2xl tracking-[.30em]">
                 IN THE MAKING
               </div>
               <div className="grid md:grid-cols-3 mt-20 px-24">
-                <div className="md:border-r-2 md:border-b-0 border-b-2 md:pb-0 pb-5 border-primaryOrange">
-                  <h1 className={`text-4xl text-white font-[700]`}>200+</h1>
+                <div className="md:border-r-2 border-primaryOrange">
+                  <h1 className={`text-4xl font-[700]`}>200+</h1>
                   <span className="uppercase">Project</span>
                 </div>
-                <div className="md:border-r-2 md:border-b-0 border-b-2 md:py-0 py-5 border-primaryOrange">
-                  <h1 className={` text-4xl text-white font-[700]`}>80+</h1>
+                <div className="md:hidden border-b-2 md:pb-0 pb-16 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
+                <div className="md:border-r-2 md:py-0 py-16 border-primaryOrange">
+                  <h1 className={` text-4xl font-[700]`}>80+</h1>
                   <span className="uppercase">Clients</span>
                 </div>
-                <div className="md:pt-0 pt-5">
-                  <h1 className={` text-4xl text-white font-[700]`}>2+</h1>
+                <div className="md:hidden border-b-2 md:pb-0 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
+                <div className="md:pt-0 pt-16">
+                  <h1 className={` text-4xl font-[700]`}>2+</h1>
                   <span className="uppercase">Years</span>
                 </div>
               </div>
@@ -85,7 +87,7 @@ export default function Home() {
         <section id="service">
           <div className="max-w-screen-xl items-center justify-between mx-auto px-4 py-14">
             Service
-            <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10 text-white">
+            <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10">
               <li>
                 <h1 className={`text-4xl font-[700]`}>
                   WEBSITE DEVELOPMENT
@@ -167,7 +169,7 @@ export default function Home() {
               height={0}
             /> */}
 
-              <h1 className={`md:text-6xl text-4xl text-white mb-5 font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl mb-5 font-[700]`}>
                 MEET OUR TEAM
             </h1>
               <div className="grid md:grid-cols-4 gap-y-6 overflow-x-auto overflow-hidden mt-20">
@@ -189,10 +191,10 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 text-center">
-              <h1 className={`md:text-6xl text-4xl text-white mb-5 font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl mb-5 font-[700]`}>
                 ABOUT US
               </h1>
-              <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
+              <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify">
               We are Sixteen Archive, was founded with the vision of
               revolutionizing the way businesses and brands communicate and
               connect with their audiences. We are a dynamic and innovative team
