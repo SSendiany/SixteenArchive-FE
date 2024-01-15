@@ -33,8 +33,7 @@ export default function Home() {
                 <br className="md:block hidden"/> WITH GREAT CONTENT
               </p>
               <div className={`mt-6 md:text-2xl md:text-left text-center`} style={{ fontWeight: 500 }}>
-                We help brands to effectively kept being engaged in digital
-                landscape.
+                Empowering brands to thrive in the ever-evolving digital realm.
               </div>
               <div className={`md:flex hidden mt-5`} style={{ fontWeight: 400 }}>
                 <div className="w-auto bg-[#D9D9D9] text-black rounded-full px-5 py-2">
@@ -70,12 +69,12 @@ export default function Home() {
                   <h1 className={`text-4xl font-[700] text-white`}>200+</h1>
                   <span className="uppercase">Project</span>
                 </div>
-                <div className="md:hidden border-b-2 md:pb-0 pb-16 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
+                <div className="md:border-b-0 border-b-2 md:pb-0 pb-16 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
                 <div className="md:border-r-2 md:py-0 py-16 border-primaryOrange">
                   <h1 className={` text-4xl font-[700] text-white`}>80+</h1>
                   <span className="uppercase">Clients</span>
                 </div>
-                <div className="md:hidden border-b-2 md:pb-0 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
+                <div className="md:border-b-0 border-b-2 md:pb-0 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
                 <div className="md:pt-0 pt-16">
                   <h1 className={` text-4xl font-[700] text-white`}>2+</h1>
                   <span className="uppercase">Years</span>
