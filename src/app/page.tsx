@@ -15,7 +15,7 @@ export default function Home() {
         type="text/javascript"
       ></Script>
       <Navbar />
-      <main className="flex min-h-screen flex-col bg-[#0F0F0F]">
+      <main className="flex min-h-screen flex-col bg-[#0F0F0F] text-white">
         <section className="relative header-background" id="header">
           <div className="max-w-screen-xl h-screen items-center md:justify-between mx-auto p-4">
             <div className="md:absolute md:mt-5 md:top-1/2 mt-32 md:-translate-y-1/2">
@@ -30,7 +30,7 @@ export default function Home() {
               >
                 ALL OUTSTANDING <br className="md:block hidden" />
                 STORYTELLING STARTS
-                <br  className="md:block hidden"/> WITH GREAT CONTENT
+                <br className="md:block hidden"/> WITH GREAT CONTENT
               </p>
               <div className={`mt-6 md:text-2xl md:text-left text-center`} style={{ fontWeight: 500 }}>
                 We help brands to effectively kept being engaged in digital
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </section>
         <section id="project">
-          <div className="max-w-screen-xl items-center justify-between mx-auto relative border-y-2 border-primaryOrange ">
+          <div className="max-w-screen-xl items-center justify-between mx-auto relative border-y-2 border-primaryOrange">
             <Image
               src="/images/background2.png"
               className={"w-full md:h-auto h-screen md:object-none object-cover"}
@@ -169,7 +169,7 @@ export default function Home() {
               height={0}
             /> */}
 
-              <h1 className={`md:text-6xl text-4xl mb-5 font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl mb-5 font-[700] text-primaryOrange`}>
                 MEET OUR TEAM
             </h1>
               <div className="grid md:grid-cols-4 gap-y-6 overflow-x-auto overflow-hidden mt-20">
