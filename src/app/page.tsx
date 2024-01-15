@@ -59,7 +59,7 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 w-full -translate-y-1/2 text-center">
-              <h1 className={`md:text-6xl text-4xl font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl font-[700] text-white`}>
                 SIXTEEN ARCHIVE
               </h1>
               <div className="text-primaryOrange md:text-3xl text-2xl tracking-[.30em]">
@@ -191,7 +191,7 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 text-center">
-              <h1 className={`md:text-6xl text-4xl mb-5 font-[700]`}>
+              <h1 className={`md:text-6xl text-4xl mb-5 font-[700] text-white`}>
                 ABOUT US
               </h1>
               <p className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
