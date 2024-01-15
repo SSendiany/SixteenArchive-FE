@@ -69,7 +69,7 @@ export default function Home() {
                   <h1 className={`text-4xl font-[700] text-white`}>200+</h1>
                   <span className="uppercase">Project</span>
                 </div>
-                <div className="md:hidden border-b-2 md:pb-0 pb-16 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
+                <div className="border-b-2 md:pb-0 pb-16 md:py-0 w-[15vw] mx-auto border-primaryOrange"></div>
                 <div className="md:border-r-2 md:py-0 py-16 border-primaryOrange">
                   <h1 className={` text-4xl font-[700] text-white`}>80+</h1>
                   <span className="uppercase">Clients</span>
