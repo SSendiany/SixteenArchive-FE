@@ -16,7 +16,7 @@ export default function Navbar() {
       window.addEventListener('scroll', changeNavbarColor);
     }
   return (
-    <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'md:bg-transparent bg-primaryOrange'} fixed w-full border-gray-200 z-50 `}>
+    <nav className={`${colorChange ? 'bg-primaryBlack/70 backdrop-blur-md' : 'md:bg-transparent bg-primaryOrange'} transition ease-in duration-200 fixed w-full border-gray-200 z-50 `}>
       <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${colorChange && 'border-b-2 border-primaryOrange'}`}>
         <a href="/" className="flex items-center">
           <Image
@@ -64,7 +64,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#about-us"
                 className="block py-2 pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
               >
                 About
@@ -72,7 +72,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#service"
                 className="block py-2 pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
               >
                 Services
