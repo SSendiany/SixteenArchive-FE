@@ -33,18 +33,18 @@ export default function Home() {
                 </span>
               </div>
               <p data-aos-delay="300" data-aos-duration="1000" data-aos="fade-right"
-                className={`-m-1 md:text-7xl text-3xl md:text-left text-center text-primaryOrange`}
+                className={`-m-1 md:text-7xl text-[7vw] md:text-left text-center text-primaryOrange`}
                 style={{ fontWeight: 700 }}
               >
                 ALL OUTSTANDING <br className="md:block hidden" />
                 STORYTELLING STARTS
                 <br className="md:block hidden"/> WITH GREAT CONTENT
               </p>
-              <div data-aos-delay="500" data-aos="fade-down" className={`mt-6 md:text-2xl md:text-left text-center`} style={{ fontWeight: 500 }}>
+              <div data-aos-delay="500" data-aos="fade-right" className={`mt-6 md:text-2xl md:text-left text-center`} style={{ fontWeight: 500 }}>
                 Empowering brands to thrive in the ever-evolving digital realm.
               </div>
               <div className={`md:flex hidden mt-5`} style={{ fontWeight: 400 }}>
-                <div data-aos-delay="700" data-aos="zoom-in" className="w-auto bg-[#D9D9D9] text-black rounded-full px-5 py-2">
+                <div data-aos-delay="700" data-aos="fade-right" className="w-auto bg-[#D9D9D9] text-black rounded-full px-5 py-2">
                   sixteenarchive.id@gmail.com
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function Home() {
               <h1 data-aos="fade-down" className={`md:text-6xl text-4xl mb-5 font-[700] text-primaryOrange`}>
                 MEET OUR TEAM
             </h1>
-              <div data-aos="zoom-in" data-aos-delay="100" className="grid md:grid-cols-4 gap-y-6 overflow-x-auto overflow-hidden mt-20">
+            <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" className="grid md:grid-cols-4 gap-y-6 overflow-x-auto overflow-hidden mt-20">
                 <div className="badge-base LI-profile-badge md:mx-0 mx-auto" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="laskarchristo" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/laskarchristo?trk=profile-badge"></a></div>
                 <div data-aos="zoom-in" data-aos-delay="300" className="badge-base LI-profile-badge md:mx-0 mx-auto" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="erlangga-fauzan-rezagani-7a3369180" data-version="v1">
                 <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/erlangga-fauzan-rezagani-7a3369180?trk=profile-badge"></a></div>
@@ -198,10 +198,10 @@ export default function Home() {
               height={0}
             />
             <div className="absolute top-1/2 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 text-center">
-              <h1 data-aos="fade-in" className={`md:text-6xl text-4xl mb-5 font-[700] text-white`}>
+              <h1 data-aos="fade-in" data-aos-delay="100" className={`md:text-6xl text-4xl mb-5 font-[700] text-white`}>
                 ABOUT US
               </h1>
-              <p data-aos="fade-in" className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
+              <p data-aos="fade-in" data-aos-delay="100" className="md:text-md text-sm md:mx-0 mx-10 md:text-center text-justify text-white">
               We are Sixteen Archive, was founded with the vision of
               revolutionizing the way businesses and brands communicate and
               connect with their audiences. We are a dynamic and innovative team
