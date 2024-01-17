@@ -12,7 +12,13 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     AOS.init();
-  },[])
+    if (document) {
+      // const iframe = document.getElementsByTagName("iframe");
+      // const elmnt = iframe.contentWindow.document.getElementsByClassName("")[0];
+    }
+  }, [])
+  
+
   return (
     <>
 
@@ -94,7 +100,7 @@ export default function Home() {
         <section id="service">
           <div className="max-w-screen-xl items-center justify-between mx-auto px-4 py-14">
             <p data-aos="fade-in">Service</p>
-            <ul className="list-disc grid md:grid-cols-2 gap-5 mt-10">
+            <ul className="md:list-disc grid md:grid-cols-2 gap-5 mt-10">
               <li data-aos="fade-down">
                 <h1 className={`text-4xl font-[700] text-white`}>
                   WEBSITE DEVELOPMENT

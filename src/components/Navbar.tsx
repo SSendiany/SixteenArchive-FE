@@ -1,9 +1,19 @@
 "use client"
 import React, { useState } from 'react';
 import Image from "next/image";
+import { motion } from "framer-motion"
+import { TfiMenu } from 'react-icons/tfi';
 
 export default function Navbar() {
+  const variants = {
+    open: { opacity: 1,  display: "block" },
+    closed: { opacity: 0, display: "none" },
+  }
   const [colorChange, setColorchange] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const handleNavbar = () => {
+    setNavbarOpen(!navbarOpen)
+  }
     const changeNavbarColor = () => {
         if (window.scrollY >= 80) {
             setColorchange(true);
@@ -29,34 +39,21 @@ export default function Navbar() {
         </a>
         <button
           data-collapse-toggle="navbar-default"
+          onClick={handleNavbar}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white focus:text-gray-400 rounded-lg md:hidden "
           aria-controls="navbar-default"
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <TfiMenu size={24}/>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-inherit">
+      <div className={`${!navbarOpen && "hidden"} w-full md:block md:w-auto`} id="navbar-default">
+          <ul className="font-medium flex flex-col md:pt-0 pt-5 mt-4 border-t-2 bg-inherit md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-inherit">
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
+                className="block py-2 md:pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
                 aria-current="page"
               >
                 Home
@@ -65,7 +62,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#about-us"
-                className="block py-2 pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
+                className="block py-2 md:pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
               >
                 About
               </a>
@@ -73,7 +70,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#service"
-                className="block py-2 pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
+                className="block py-2 md:pl-3 pr-4 text-white hover:text-gray-400 rounded bg-transparent md:p-0"
               >
                 Services
               </a>
