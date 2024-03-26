@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import localFont from "next/font/local";
+import GoogleAnalytics from './GoogleAnalytics';
+
 const MetropolisBlack = localFont({
   src: [
     {
@@ -44,6 +46,7 @@ export default function RootLayout({
       </head>
       <link rel="icon" href="./favicon.ico" sizes="any" />
       <body className={MetropolisBlack.className}>{children}</body>
+      <GoogleAnalytics />
     </html>
   )
 }
