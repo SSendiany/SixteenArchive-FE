@@ -8,6 +8,8 @@ import { motion } from "framer-motion"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function Home() {
   useEffect(() => {
@@ -97,6 +99,33 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="hidden" id="our-project">
+          <div className="max-w-screen-xl items-center justify-between mx-auto text-center py-24 relative border-y-2 border-primaryOrange ">
+            <h1 data-aos="fade-down" className={`md:text-6xl text-4xl mb-10 font-[700] text-primaryOrange`}>
+                PROJECT
+            </h1>
+    <Swiper
+      spaceBetween={10}
+      slidesPerView={3}
+    >
+      <SwiperSlide>
+        <a target="_blank" href="https://merobiarthaputera.com/">
+          <Image
+            src="/images/merobi.png"
+            className={"w-full object-cover rounded-2xl"}
+            alt="project-merobi"
+            width={0}
+            height={0}
+          />
+        </a>
+      </SwiperSlide>
+      {/* <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide> */}
+    </Swiper>
+      
+          </div>
+        </section>
         <section id="service">
           <div className="max-w-screen-xl items-center justify-between mx-auto px-4 py-14">
             <p data-aos="fade-in">Service</p>
@@ -157,7 +186,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section className="hidden" id="our-client">
+        <section  id="our-client">
           <div className="max-w-screen-xl items-center justify-between mx-auto text-center py-24 relative border-y-2 border-primaryOrange ">
             {/* <Image
               src="/images/bg-about.png"
@@ -167,9 +196,68 @@ export default function Home() {
               height={0}
             /> */}
 
-              <h1 className={`text-6xl text-primaryOrange mb-5 font-[700]`}>
+            <h1 data-aos="fade-in" className={`md:text-6xl text-4xl text-primaryOrange mb-10 font-[700]`}>
                 OUR CLIENT
-              </h1>Lorem
+            </h1>
+            <div data-aos="fade-in" className="grid lg:grid-cols-3 md:grid-cols-2 items-center">
+            <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/Three Little Angel.png"
+              className={"mx-auto w-48 object-cover"}
+              alt="threelittleangel"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/SCW_Logo.png"
+              className={"mx-auto w-48 object-cover"}
+              alt="scw"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/logo_merobi.png"
+              className={"mx-auto w-32 object-cover"}
+              alt="merobi"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/Ekklesia.png"
+              className={"mx-auto w-48 object-cover"}
+              alt="ekklesia"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/Akademi-maritim-djajat.png"
+              className={"mx-auto w-48 object-cover"}
+              alt="akademimaritimdjajat"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+    
+          
+               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
+                <Image
+              src="/images/client/After Hour.png"
+              className={"mx-auto w-48 object-cover"}
+              alt="After hour"
+              width={0}
+              height={0}
+            />
+              </motion.div>
+      
+            </div>
             </div>
         </section>
         <section id="our-team">
