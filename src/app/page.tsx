@@ -41,7 +41,7 @@ export default function Home() {
                 </span>
               </div>
               <p data-aos-delay="300" data-aos-duration="1000" data-aos="fade-right"
-                className={`-m-1 md:text-7xl text-[7vw] md:text-left text-center text-primaryOrange`}
+                className={`-m-1 2xl:text-7xl md:text-6xl text-[7vw] md:text-left text-center text-primaryOrange`}
                 style={{ fontWeight: 700 }}
               >
                 ALL OUTSTANDING <br className="md:block hidden" />
@@ -245,18 +245,7 @@ export default function Home() {
               height={0}
             />
               </motion.div>
-    
-          
-               <motion.div className="xl:opacity-50" whileHover={{ opacity: 1 }}>
-                <Image
-              src="/images/client/After Hour.png"
-              className={"mx-auto w-48 object-cover"}
-              alt="After hour"
-              width={0}
-              height={0}
-            />
-              </motion.div>
-      
+  
             </div>
             </div>
         </section>
